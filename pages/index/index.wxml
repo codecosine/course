@@ -1,10 +1,37 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="time-header">
+  <button class="inline-btn"><icon type="info" /></button>
+  <text class="time-text">{{ todayTime }}</text>
+  <button  bindtap="bindViewTap" class="inline-btn"><icon type="search" size="20"/></button>
 </view>
+<view class="time-scroll-x">
+<scroll-view class="scroll-view-time-x" scroll-x="true" bindscroll="scroll" style="width: 100%">
+    <view class="scroll-view-time-x-item">周一</view>
+    <view class="scroll-view-time-x-item">周一</view>
+    <view class="scroll-view-time-x-item">周一</view>
+    <view class="scroll-view-time-x-item">周一</view>
+    <view class="scroll-view-time-x-item">周一</view>
+</scroll-view>
+</view>
+<scroll-view scroll-y style="height: 400px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="time-event-item">
+      <span class="time-event-icon">*</span>
+      <text class="time-event-text">课程1</text>
+    </view>
+    <view class="time-event-item">
+      <text>课程1</text>
+    </view>
+    <view class="time-event-item">
+      <text>课程1</text>
+    </view>
+    <view class="time-event-item">
+      <text>课程1</text>
+    </view>
+    <view class="time-event-item">
+      <text>课程1</text>
+    </view>
+    <view class="time-event-item">
+      <text>课程1</text>
+    </view>
+   
+</scroll-view>

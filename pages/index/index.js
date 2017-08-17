@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
+    todayTime: '8月17日',
     userInfo: {}
   },
   //事件处理函数
@@ -11,6 +11,9 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  scroll: function (e) {
+    console.log(e)
   },
   onLoad: function () {
     console.log('onLoad')

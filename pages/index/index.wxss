@@ -1,4 +1,42 @@
-/**index.wxss**/
+.time-header{
+    height: 128rpx;
+}
+.inline-btn{
+    height: 80rpx;
+    width: 80rpx;
+    display: inline-block;
+}
+.time-text{
+  color: #0ca4f3;
+  font-size: 14px;
+  font-weight: bold;
+}
+.time-scroll-x{
+  margin: 10px 0px;
+}
+.scroll-view-time-x{
+  white-space: nowrap;
+}
+.scroll-view-time-x-item{
+  width: 60px;
+  margin: 0 10px;
+  display: inline-block; 
+  height: 90rpx;
+  background-color: #a9e2ff;
+}
+.time-event-icon{
+  height: 10rpx;
+  width: 10rpx;
+  background-color: #a9e2ff;
+}
+.time-event-item{
+  border-top: 1px #aaa solid;
+  padding: 30px 10px;
+}
+.time-event-text{
+    font-weight: bold;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -19,3 +57,4 @@
 .usermotto {
   margin-top: 200px;
 }
+
